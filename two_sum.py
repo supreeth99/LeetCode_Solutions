@@ -36,7 +36,7 @@ class Solution(object):
         :rtype: List[int]
         """
         numMap = {}
-        print(type(numMap))
+        # print(type(numMap))
         n = len(nums)
 
         for i in range(n):
@@ -44,6 +44,6 @@ class Solution(object):
             if complement in numMap:
                 return [numMap[complement], i]
             numMap[nums[i]] = i
-            print(numMap)
+            # print(numMap)
 
         return []  # No solution found
